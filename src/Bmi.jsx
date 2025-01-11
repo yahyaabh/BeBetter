@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { NavBar } from "./components/NavBar"
 import bmiPic from "./assets/bmi.jpg";
+import { NavLink } from "react-router";
+
 export default function Bmi() {
     let [height, setHeight] = useState(0);
     let [weight, setWeight] = useState(0);
@@ -34,7 +36,7 @@ export default function Bmi() {
                 <input onChange={handleWeight} type="number" className= "transition-all my-2 border-2 rounded-lg shadow-md border-blue w-full px-4 py-2 focus:py-1 focus:outline-none focus:border-mint " name="weight" placeholder="weight in kg:"/>
                 <button  type="submit" className="bg-black px-4 py-2 mt-2 rounded-md text-blue hover:text-mint hover:p-2 transition-all  " >calculate</button>
             </form>
-            <p className="font-medium mt-2 mb-2  text-xl">your bmi is: <span className=" font-extrabold underline animate-pulse text-mint cursor-pointer    ">{bmi}</span> </p>
+            <p className="font-medium mt-2 mb-2  text-xl">your bmi is: <NavLink to="../bmitips"  className=" font-extrabold underline animate-pulse text-mint cursor-pointer    ">{bmi}</NavLink > </p>
             <img className="size-60 w-72 rounded-md mt-5" src={bmiPic}></img>
             
         </div>
