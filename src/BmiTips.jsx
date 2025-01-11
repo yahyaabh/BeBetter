@@ -45,7 +45,7 @@ export default function BmiTips() {
                     <li className="m-2">hydrate, eat well and take care of yourself and your space.</li>
                 </ul>
 
-                <NavLink className="bg-blue p-2 rounded-lg cursor-pointer m-4 w-1/4 text-center animate-pulse text-white transition-all hover:p-1 ">fix my mood!</NavLink>
+                <NavLink to="../wellness" className="bg-blue p-2 rounded-lg cursor-pointer m-4 w-1/4 text-center animate-pulse text-white transition-all hover:p-1 ">fix my mood!</NavLink>
             </div>
         </div>
     </div>

@@ -13,6 +13,8 @@ export default {
       'aqua' : '#36F1CD',
       'blue': '#39A0ED',
       'white': '#FFFFFF',
+      'red': '#FF0000',
+      'green': '#32CD32'
     },
     extend: {},
   },
